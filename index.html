@@ -18,23 +18,23 @@
   <!-- Following Menu -->
   <div class="ui large top fixed hidden menu">
     <div class="ui container">
-      <a class="active item">About Us</a>
-      <a class="item">Career Counseling</a>
-      <a class="item">Trainings</a>
-      <a class="item">IT Consulting</a>
-      <a class="item">Financial Planning</a>
-      <a class="item">Contact Us</a>
+      <a class="item about-us-nav">About Us</a>
+      <a class="item career-counseling-nav">Career Counseling</a>
+      <a class="item training-nav">Trainings</a>
+      <a class="item it-consulting-nav">Business Consulting</a>
+      <a class="item financial-planning-nav">Financial Planning</a>
+      <a class="item contact-us-nav">Contact Us</a>
     </div>
   </div>
 
   <!-- Sidebar Menu -->
   <div class="ui vertical inverted sidebar menu">
-    <a class="active item">About Us</a>
-    <a class="item">Career Counseling</a>
-    <a class="item">Trainings</a>
-    <a class="item">IT Consulting</a>
-    <a class="item">Financial Planning</a>
-    <a class="item">Contact Us</a>
+    <a class="item about-us-nav">About Us</a>
+    <a class="item career-counseling-nav">Career Counseling</a>
+    <a class="item training-nav">Trainings</a>
+    <a class="item it-consulting-nav">Business Consulting</a>
+    <a class="item financial-planning-nav">Financial Planning</a>
+    <a class="item contact-us-nav">Contact Us</a>
   </div>
 
   <!-- Page Contents -->
@@ -46,12 +46,12 @@
           <a class="toc item">
             <i class="sidebar icon"></i>
           </a>
-          <a class="active item">About Us</a>
-          <a class="item">Career Counseling</a>
-          <a class="item">Trainings</a>
-          <a class="item">IT Consulting</a>
-          <a class="item">Financial Planning</a>
-          <a class="item">Contact Us</a>
+          <a class="item about-us-nav">About Us</a>
+          <a class="item career-counseling-nav">Career Counseling</a>
+          <a class="item training-nav">Trainings</a>
+          <a class="item it-consulting-nav">Business Consulting</a>
+          <a class="item financial-planning-nav">Financial Planning</a>
+          <a class="item contact-us-nav">Contact Us</a>
         </div>
       </div>
 
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" id="about-us">
       <div class="ui middle aligned stackable grid container">
         <div class="row">
           <div class="sixteen wide column">
@@ -98,7 +98,7 @@
     </div>
 
 
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" id="career-counseling">
       <h3 class="ui header" style="text-align: center;margin-bottom:40px">Career Counseling</h3>
       <div class="ui equal width stackable grid">
 
@@ -121,7 +121,7 @@
     </div>
 
 
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" id="training">
       <h3 class="ui header" style="text-align: center;margin-bottom: 30px;">Training</h3>
       <div class="ui mobile reversed equal width stackable container grid">
 
@@ -130,18 +130,18 @@
           <p>Guide / Conduct suitable training and coaching to win over competition.</p>
           <p> Following trainings we provide/arrange for our students</p>
 
-          <div class="ui celled ordered list">
-            <div class="item">IT Trainings: C++, Java, IOT, Android, .NET, Cloud Computing, Python, Tally, SAP, Web design, Mobility, Data
+          <ol class="ui list">
+            <li value="*">IT Trainings: C++, Java, IOT, Android, .NET, Cloud Computing, Python, Tally, SAP, Web design, Mobility, Data
               Science.
-            </div>
-            <div class="item">Non IT Trainings: Medical MR, Automobile Sales process, Financial Planning </div>
-            <div class="item">Personality Development: Spoken English, Public Speaking, Aptitude Developmet, Mock test and Interview preparation</div>
-            <div class="item">Engineerig Students: We provide comprehensive technical as well as personality development oriented training
-              to get jobs through campus/off campus recruitment process.</div>
-            <div class="item">Engineerig Students: We provide comprehensive technical as well as personality development oriented training
-              to get jobs through campus/off campus recruitment process.</div>
-            <div class="item">Corporate Training: We organize IT and ERP trainings for Industry users.</div>
-          </div>
+            </li>
+            <li value="*">Non IT Trainings: Medical MR, Automobile Sales process, Financial Planning </li>
+            <li value="*">Personality Development: Spoken English, Public Speaking, Aptitude Developmet, Mock test and Interview preparation</li>
+            <li value="*">Engineerig Students: We provide comprehensive technical as well as personality development oriented training
+              to get jobs through campus/off campus recruitment process.</li>
+            <li value="*">Engineerig Students: We provide comprehensive technical as well as personality development oriented training
+              to get jobs through campus/off campus recruitment process.</li>
+            <li value="*">Corporate Training: We organize IT and ERP trainings for Industry users.</li>
+          </ol>
 
         </div>
 
@@ -154,13 +154,13 @@
       </div>
     </div>
 
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" id="it-consulting">
       <h3 class="ui header" style="text-align: center;margin-bottom:40px">Business Consulting (IT/Non IT)</h3>
       <div class="ui grid two column  equal width stackable container">
 
 
         <div class="column" style="background-image: url(./img/consulting.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat">
 
@@ -172,7 +172,7 @@
                 <div class="ui fluid card fixsize">
                   <div class="content">
                     <div class="header">Resource support</div>
-                   
+
                   </div>
                   <div class="content">
 
@@ -180,7 +180,7 @@
                       <div class="event">
                         <div class="content">
                           <div class="summary">
-                             <a class="ui red ribbon label">Overview</a>
+                            <a class="ui red ribbon label">Overview</a>
                             <div style="margin-top:10px">We provide qualified resources for various IT, Non IT jobs for the industries based on requirement</div>
                           </div>
                         </div>
@@ -205,9 +205,9 @@
                           <div class="summary">
                             <a class="ui red ribbon label">Overview</a>
                             <div style="margin-top:10px">
-                            We devlop/deploy business specfic IT solutions. We carry out solution deployment through Project Implementation, Maintenance
-                            Support (Application, DB, Infrastructure), Enhancements, resource deployment in both onsite as
-                            welll as offshore locations.
+                              We devlop/deploy business specfic IT solutions. We carry out solution deployment through Project Implementation, Maintenance
+                              Support (Application, DB, Infrastructure), Enhancements, resource deployment in both onsite
+                              as welll as offshore locations.
                             </div>
                           </div>
                         </div>
@@ -232,7 +232,7 @@
                           <div class="summary">
                             <a class="ui red ribbon label">Overview</a>
                             <div style="margin-top:10px">
-                            Provide Infrastructure/Landscape design, Procurement, installation and maintenance support for the deployment of IT solution.
+                              Provide Infrastructure/Landscape design, Procurement, installation and maintenance support for the deployment of IT solution.
                             </div>
                           </div>
                         </div>
@@ -245,34 +245,83 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="ui inverted vertical footer segment" style="margin-top:50px">
-        <div class="ui container">
-          <div class="ui stackable inverted divided equal height stackable grid">
-            <div class="three wide column">
-              <h4 class="ui inverted header">About</h4>
-              <div class="ui inverted link list">
-                <a href="#" class="item">Sitemap</a>
-                <a href="#" class="item">Contact Us</a>
-                <a href="#" class="item">Religious Ceremonies</a>
-                <a href="#" class="item">Gazebo Plans</a>
+     <div class="ui vertical stripe segment" id="financial-planning">
+        <h3 class="ui header" style="text-align: center;margin-bottom:40px">Financial Planning</h3>
+        <div class="ui grid mobile reversed two column stackable container">
+        
+            <div class="twelve wide column">
+              <div class="ui basic segment">
+                <p>We provide guidance on Financial planning, help choose Investment options (Mutual Funds, Fixed Bonds), Insurance options (TERM, Health Insurance, Property Insurance) through qualified Financial planners.</p>
               </div>
             </div>
-            <div class="three wide column">
-              <h4 class="ui inverted header">Services</h4>
-              <div class="ui inverted link list">
-                <a href="#" class="item">Banana Pre-Order</a>
-                <a href="#" class="item">DNA FAQ</a>
-                <a href="#" class="item">How To Access</a>
-                <a href="#" class="item">Favorite X-Men</a>
+       
+       <div class="four wide column" style="background-image: url(./img/financial-planing.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat">
+
+        </div>
+        </div>
+      </div>
+
+
+     <div class="ui vertical stripe segment" id="location-map">
+        <h3 class="ui header" style="text-align: center;margin-bottom:40px">Location Map</h3>
+        <div class="ui grid one column  equal width stackable">
+          <div class="row">
+            <div class="column">
+              <div class="ui segment">
+                <div id="map" style="height:600px"></div>
               </div>
-            </div>
-            <div class="seven wide column">
-              <h4 class="ui inverted header">Footer Header</h4>
-              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
             </div>
           </div>
         </div>
+      </div>
+
+     
+
+      <div id="contact-us" class="ui inverted vertical footer segment">
+              <div class="ui container">
+                  <div class="ui stackable inverted divided equal height stackable two column grid">
+                        <div class=" column">
+                              <h4 class="ui inverted header">
+                                    Address
+                              </h4>
+                              <div class="address">
+                                    <p>
+                                          Premises No. 493,
+                                    </p>
+                                    <p>
+                                          Madurdaha, Flat No – B4,
+                                    </p>
+                                    <p>
+                                          2nd Floor, 
+                                    </p>
+                                    <p>
+                                          PS: - Anandapur, Kolkata: - 700107
+                                    </p>
+                                    <p>
+                                          West Bengal
+                                    </p>
+                              </div>
+                        </div>
+
+                        <div class="column">
+                              <h4 class="ui inverted header">
+                                    Contact Number
+                              </h4>
+                              <p >
+                                    Phone: +91-8617276706, +91-7003148679
+                              </p>
+                               <h4 class="ui inverted header">
+                                    E-mail : info.hr@chintanservices.in
+                              </h4>
+                              
+                        </div>
+                  </div>
+            </div>
       </div>
     </div>
 
@@ -280,6 +329,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="./js/semantic.min.js"></script>
 <script src="./js/jquery.waypoints.min.js"></script>
+<script src="./js/jquery.scrollTo.min.js"></script>
 
 <script>
   var map;
@@ -295,11 +345,11 @@
     });
     var marker = new google.maps.Marker({
       position: {
-        lat: 22.385702
-        , lng: 88.414855
+        lat: 22.498725, 
+        lng: 88.406835
       }
       , map: map
-      , title: 'Avanzar IT Consulting Private Ltd.'
+      , title: 'Chintan Services'
     });
 
   }
@@ -330,6 +380,43 @@
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
         ;
+
+
+      $(".contact-us-nav").click(function () {
+
+        $(window).scrollTo("#contact-us", 1000, { offset: -20 });
+      });
+
+      $(".about-us-nav").click(function () {
+
+        $(window).scrollTo("#about-us", 1000, { offset: 10 });
+      });
+
+
+      $(".career-counseling-nav").click(function () {
+
+        $(window).scrollTo("#career-counseling", 1000, { offset: -20 });
+      });
+
+      $(".training-nav").click(function () {
+
+        $(window).scrollTo("#training", 1000, { offset: -20 });
+      });
+
+
+      $(".it-consulting-nav").click(function () {
+
+        $(window).scrollTo("#it-consulting", 1000, { offset: -20 });
+      });
+
+
+      $(".financial-planning-nav").click(function () {
+
+        $(window).scrollTo("#financial-planning", 1000, { offset: -20 });
+      });
+
+
+      $(window).scrollTo(0, 1000);
 
     })
     ;
